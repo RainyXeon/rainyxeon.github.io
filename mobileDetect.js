@@ -9,7 +9,7 @@ const isMobile = mobileAndTabletCheck()
 if (isMobile) {
   document.getElementById('term_screen').innerHTML = `<pre style="display: block; width: 100%;">
 If you see this screen, that means, you're viewing this portfolio in the phone
-Currently my portfolio bot support phone input!
+Currently my portfolio not support phone input!
 Sorry for inconvenient, you can view my profile via <a href="https://github.com/RainyXeon" target="_blank">Github</a>
 
 Catch me on:
@@ -17,7 +17,7 @@ Catch me on:
   - <a href="mailto:xeondev@xeondex.onmicrossoft.com">Email</a>
   - <a href="https://x.com/RainyXeon" target="_blank">X (Twitter)</a>
 
-Some of my faamouss projects:
+Some of my famous projects:
   - <a href="https://github.com/LunaticSea" target="_blank">LunaticSea Ecosystem</a>
   - <a href="https://github.com/RainyXeon/ByteBlaze" target="_blank">ByteBlaze</a>
   - <a href="https://github.com/RainyXeon/Rainlink" target="_blank">Rainlink</a>
