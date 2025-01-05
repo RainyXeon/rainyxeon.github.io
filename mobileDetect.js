@@ -7,7 +7,7 @@ function mobileAndTabletCheck() {
 const isMobile = mobileAndTabletCheck()
 
 if (isMobile) {
-  document.getElementById('term_screen').innerHTML += `<pre>
+  document.getElementById('term_screen').innerHTML = `<pre style="display: block; width: 100%;">
 If you see this screen, that means, you're viewing this portfolio in the phone
 Currently my portfolio bot support phone input!
 Sorry for inconvenient, you can view my profile via <a href="https://github.com/RainyXeon" target="_blank">Github</a>

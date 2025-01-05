@@ -110,3 +110,17 @@ body::-webkit-scrollbar {
 input:focus {
   outline: none !important;
 }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+@media all and (orientation:landscape) {
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+}
