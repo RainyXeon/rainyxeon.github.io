@@ -1,5 +1,5 @@
 const command = {
-  name: "help",
+  name: "HELP",
   desc: "List all command, usage and its description",
   usage: null,
 

@@ -1,13 +1,18 @@
-import help from "./commands/help.js";
-import info from "./commands/info.js"
-import clear from "./commands/clear.js"
-import ls from "./commands/ls.js"
-import cls from "./commands/cls.js"
-import rainyLore from './commands/rainy_lore.js'
+import HELP from "./commands/HELP.js";
+import INFO from "./commands/INFO.js"
+import DIR from "./commands/DIR.js"
+import CLS from "./commands/CLS.js"
+import RAINY from './commands/RAINY.js'
 import warni from "./warn.js";
 
 let counter = 0
-const commandList = { help, info, clear, ls, cls, rainyLore }
+const commandList = {
+  HELP,
+  INFO,
+  DIR,
+  CLS, 
+  RAINY
+}
 let empty_counter = 0
 
 let history = []
@@ -73,7 +78,7 @@ const handleFunction = (e) => {
 
   document.getElementById('term_screen').innerHTML += `<div style="display: flex; align-items: center;">
     <div style="margin-right: 10px;">C:\\Users\\DeepInRain\\RainyXeon></div>
-    <input dummy="true" type="text" id="input_cmd" class="cmd_input" placeholder="Use 'help' to see more command!">
+    <input dummy="true" type="text" id="input_cmd" class="cmd_input" placeholder="Use 'HELP' to see more command!">
   </div>`
 
   document.getElementById("input_cmd").focus()

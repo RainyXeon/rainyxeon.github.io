@@ -1,7 +1,7 @@
 import prettyMilliseconds from "../libs/pretty_ms/index.js"
 
 const command = {
-  name: "info",
+  name: "INFO",
   desc: "My current infomation",
   usage: null,
 

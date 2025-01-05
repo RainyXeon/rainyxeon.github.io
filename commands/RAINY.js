@@ -1,5 +1,5 @@
 const command = {
-  name: "rainyLore",
+  name: "RAINY",
   desc: "List all file",
   usage: null,
   hidden: true,

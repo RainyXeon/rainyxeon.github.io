@@ -1,5 +1,5 @@
 const command = {
-  name: "cls",
+  name: "CLS",
   desc: "Clear all screen (short)",
   usage: null,
 
