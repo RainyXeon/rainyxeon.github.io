@@ -21,7 +21,7 @@ Some of my faamouss projects:
   - <a href="https://github.com/LunaticSea" target="_blank">LunaticSea Ecosystem</a>
   - <a href="https://github.com/RainyXeon/ByteBlaze" target="_blank">ByteBlaze</a>
   - <a href="https://github.com/RainyXeon/Rainlink" target="_blank">Rainlink</a>
-  - <a href="https://github.com/RainyXeon/Cylane" target="_blank">Cylane</a
+  - <a href="https://github.com/RainyXeon/Cylane" target="_blank">Cylane</a>
 
 “I remember you was conflicted
 
