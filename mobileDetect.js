@@ -12,27 +12,59 @@ If you see this screen, that means, you're viewing this portfolio in the phone
 Currently my portfolio bot support phone input!
 Sorry for inconvenient, you can view my profile via <a href="https://github.com/RainyXeon" target="_blank">Github</a>
 
+Catch me on:
+  - <a href="https://discord.com/users/898728768791789628" target="_blank">Discord (rainyxeon)</a>
+  - <a href="mailto:xeondev@xeondex.onmicrossoft.com">Email</a>
+  - <a href="https://x.com/RainyXeon" target="_blank">X (Twitter)</a>
+
+Some of my faamouss projects:
+  - <a href="https://github.com/LunaticSea" target="_blank">LunaticSea Ecosystem</a>
+  - <a href="https://github.com/RainyXeon/ByteBlaze" target="_blank">ByteBlaze</a>
+  - <a href="https://github.com/RainyXeon/Rainlink" target="_blank">Rainlink</a>
+  - <a href="https://github.com/RainyXeon/Cylane" target="_blank">Cylane</a
+
 “I remember you was conflicted
+
 Misusing your influence
+
 Sometimes I did the same
+
 Abusing my power, full of resentment
+
 Resentment that turned into a deep depression
+
 Found myself screaming in the hotel room
+
 I didn’t wanna self destruct
+
 The evils of Lucy was all around me
+
 So I went running for answers
+
 Until I came home
+
 But that didn’t stop survivor’s guilt
+
 Going back and forth trying to convince myself the stripes I earned
+
 Or maybe how A-1 my foundation was
+
 But while my loved ones was fighting the continuous war back in the city, I was entering a new one
+
 A war that was based on apartheid and discrimination
+
 Made me wanna go back to the city and tell the homies what I learned
+
 The word was respect
+
 Just because you wore a different gang color than mine's
+
 Doesn’t mean I can’t respect you as a black man
+
 Forgetting all the pain and hurt we caused each other in these streets
+
 If I respect you, we unify and stop the enemy from killing us
+
 But I don’t know, I’m no mortal man, maybe I’m just another nigga”
 
 ― Kendrick Lamar, To Pimp a Butterfly
