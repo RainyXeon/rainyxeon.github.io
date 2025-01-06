@@ -20,6 +20,7 @@ body {
 * {
   font-family: "C64";
   font-size: 22px;
+  font-weight: lighter;
 }
 
 a:link {
@@ -41,7 +42,7 @@ a:hover {
 body {
   margin: 0;
   padding: 30px;
-  color: #e6770b;
+  color: #ffffff;
 
   background-color: rgb(25, 25, 30);
   text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5),
@@ -87,7 +88,7 @@ body::-webkit-scrollbar {
   border: 0;
   outline: 0;
   padding: 0;
-  color: #e6770b;
+  color: #ffffff;
   background-color: rgb(25, 25, 30);
   width: 100%;
   height: 100%;
@@ -96,13 +97,13 @@ body::-webkit-scrollbar {
 }
 
 .cmd_input::placeholder {
-  color: #8f4b08;
+  color: #a5a5a5;
   text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5),
   -1px -1px rgba(0, 255, 255, 0.4);
 }
 
 .cmd_input::-ms-input-placeholder {
-  color: #8f4b08;
+  color: #a5a5a5;
   text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5),
   -1px -1px rgba(0, 255, 255, 0.4);
 }

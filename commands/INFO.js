@@ -36,9 +36,9 @@ const command = {
    .P!!7?J5G&~G:?Y^!75#Y5BPB77777?7775.    | You can call me:
       :^!J&?!5.B:!7775#Y!:BJ#G?J7!^.       |  - rainy
            G^?Y.J77775#Y7J:75J#.           |  - ArisuRain
-           .B:J?!77775&5777Y.G.            |  - Mưa
-            .B^7?7!^..^!7?7^G^             |  - Chuvoso
-             .~.          .^.              |  - Ame-san
+           .B:J?!77775&5777Y.G.            |  - Chuvoso
+            .B^7?7!^..^!7?7^G^             |  - Ame-san
+             .~.          .^.              |
 </pre>`
   },
 

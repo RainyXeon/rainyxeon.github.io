@@ -3,7 +3,11 @@ import INFO from "./commands/INFO.js"
 import DIR from "./commands/DIR.js"
 import CLS from "./commands/CLS.js"
 import RAINY from './commands/RAINY.js'
+import AUDIO from './commands/AUDIO.js'
+import EFFECTS from './commands/EFFECTS.js'
 import warni from "./warn.js";
+
+const beep = new Audio("beep.mp3")
 
 let counter = 0
 const commandList = {
@@ -11,14 +15,16 @@ const commandList = {
   INFO,
   DIR,
   CLS, 
-  RAINY
+  RAINY,
+  AUDIO,
+  EFFECTS
 }
 let empty_counter = 0
 
 let history = []
 
 function handleCommand(e) {
-  const commandName = e.target.value
+  const [commandName] = e.target.value.split(' ');
   const command = commandList[commandName]
   if (command) command.run(e, commandList)
   else {
@@ -56,6 +62,15 @@ const handleFunction = (e) => {
   if (e.code == "ArrowUp") return handleArrowUp(e)
   if (e.code == "ArrowDown") return handleArrowDown(e)
   if (e.code !== "Enter") return
+
+  const isEnableBeep = localStorage.getItem("/settings/audio/beep")
+
+  if (!isEnableBeep) {
+    beep.play();
+    localStorage.setItem("/settings/audio/beep", "yes")
+  } else if (isEnableBeep == "yes") {
+    beep.play();
+  }
 
   const node = document.createElement("div")
   node.innerHTML = e.target.value

@@ -17,7 +17,7 @@ const command = {
       res_string.push(command.template(`Description: ${element.desc}`, 40))
     
       if (element.usage !== null)
-        res_string.push(command.template(`Usage: ${element.name}`, 40))
+        res_string.push(command.template(`Usage: ${element.usage}`, 40))
 
       res_string.push(command.template())
     }
