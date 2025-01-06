@@ -32,7 +32,7 @@ const command = {
       }
 
       document.getElementById('term_screen').innerHTML = `<div style="display: flex; align-items: center;">
-        <div style="margin-right: 10px;">C:\\Users\\DeepInRain\\RainyXeon></div>
+        <div style="margin-right: 10px;">C:\\></div>
         <input dummy="true" type="text" id="input_cmd" class="cmd_input" placeholder="Use 'HELP' to see more command!">
       </div>`
 
