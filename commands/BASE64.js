@@ -1,5 +1,3 @@
-const rootCss = document.querySelector(':root')
-
 function decode(base64) {
   const binString = window.atob(base64);
   return new TextDecoder().decode(

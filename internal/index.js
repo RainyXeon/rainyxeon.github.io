@@ -7,6 +7,7 @@ import AUDIO from '../commands/AUDIO.js'
 import EFFECTS from '../commands/EFFECTS.js'
 import SYSINFO from '../commands/SYSINFO.js'
 import BASE64 from '../commands/BASE64.js'
+import BADAPPLE from '../commands/BADAPPLE.js'
 import warni from "./warn.js";
 
 const beep = new Audio("assets/audio/beep.mp3")
@@ -21,7 +22,8 @@ const commandList = {
   AUDIO,
   EFFECTS,
   SYSINFO,
-  BASE64
+  BASE64,
+  BADAPPLE
 }
 let empty_counter = 0
 
@@ -69,10 +71,12 @@ const handleFunction = (e) => {
 
   const isEnableBeep = localStorage.getItem("/settings/audio/beep")
 
-  if (!isEnableBeep) {
+  const [commandName] = e.target.value.split(' ');
+
+  if (!isEnableBeep && commandName !== "BADAPPLE") {
     beep.play();
     localStorage.setItem("/settings/audio/beep", "yes")
-  } else if (isEnableBeep == "yes") {
+  } else if (isEnableBeep == "yes" && commandName !== "BADAPPLE") {
     beep.play();
   }
 

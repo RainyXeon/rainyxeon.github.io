@@ -4,7 +4,7 @@ const command = {
   usage: null,
 
   run: (e, commandList) => {
-    document.getElementById('term_screen').innerHTML += "<pre>RAINY.exe</pre>"
+    document.getElementById('term_screen').innerHTML += "<pre>RAINY.exe BADAPPLE.exe</pre>"
   }
 }
 

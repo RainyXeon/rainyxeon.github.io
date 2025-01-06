@@ -15,6 +15,10 @@ body {
   min-height: 100%;
 }
 
+pre {
+  margin: 0;
+}
+
 @font-face {
   font-family: "C64";
   src: url('assets/TerminusTTF-4.46.0.ttf');
