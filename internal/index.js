@@ -1,13 +1,13 @@
-import HELP from "./commands/HELP.js";
-import INFO from "./commands/INFO.js"
-import DIR from "./commands/DIR.js"
-import CLS from "./commands/CLS.js"
-import RAINY from './commands/RAINY.js'
-import AUDIO from './commands/AUDIO.js'
-import EFFECTS from './commands/EFFECTS.js'
+import HELP from "../commands/HELP.js";
+import INFO from "../commands/INFO.js"
+import DIR from "../commands/DIR.js"
+import CLS from "../commands/CLS.js"
+import RAINY from '../commands/RAINY.js'
+import AUDIO from '../commands/AUDIO.js'
+import EFFECTS from '../commands/EFFECTS.js'
 import warni from "./warn.js";
 
-const beep = new Audio("beep.mp3")
+const beep = new Audio("assets/audio/beep.mp3")
 
 let counter = 0
 const commandList = {
@@ -80,7 +80,6 @@ const handleFunction = (e) => {
   e.target.parentNode.removeChild(e.target);
 
   e.target.removeEventListener('keydown', () => {})
-  e.target.removeEventListener('blur', () => {})
 
   if (e.target.value.length !== 0) history.push(e.target.value)
 

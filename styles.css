@@ -2,6 +2,9 @@
   --crt-red: rgb(218, 49, 49);
   --crt-green: rgb(112, 159, 115);
   --crt-blue: rgb(40, 129, 206);
+  --text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5), -1px -1px rgba(0, 255, 255, 0.4);
+  --terminal-color: #c9c9c9;
+  --terminal-placeholder-color: #8a8a8a;
 }
 
 html {
@@ -14,13 +17,12 @@ body {
 
 @font-face {
   font-family: "C64";
-  src: url('TerminusTTF-4.46.0.ttf');
+  src: url('assets/TerminusTTF-4.46.0.ttf');
 }
 
 * {
   font-family: "C64";
   font-size: 22px;
-  font-weight: lighter;
 }
 
 a:link {
@@ -42,12 +44,56 @@ a:hover {
 body {
   margin: 0;
   padding: 30px;
-  color: #ffffff;
-
+  color: var(--terminal-color);
   background-color: rgb(25, 25, 30);
-  text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5),
-    -1px -1px rgba(0, 255, 255, 0.4);
   position: relative;
+}
+
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.cmd_input {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  color: var(--terminal-color);
+  background-color: rgb(25, 25, 30);
+  width: 100%;
+  height: 100%;
+  text-shadow: var(--text-shadow);
+}
+
+.cmd_input::placeholder {
+  color: var(--terminal-placeholder-color);
+  text-shadow: var(--text-shadow);
+}
+
+.cmd_input::-ms-input-placeholder {
+  color: var(--terminal-placeholder-color);
+  text-shadow: var(--text-shadow);
+}
+
+input:focus {
+  outline: none !important;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+@media all and (orientation:landscape) {
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+}
+
+body[effect="true"] {
+  text-shadow: var(--text-shadow);
   &:before,
   &:after {
     content: "";
@@ -77,51 +123,5 @@ body {
       var(--crt-green) 2px,
       var(--crt-blue) 3px
     );
-  }
-}
-
-body::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
-}
-
-.cmd_input {
-  border: 0;
-  outline: 0;
-  padding: 0;
-  color: #ffffff;
-  background-color: rgb(25, 25, 30);
-  width: 100%;
-  height: 100%;
-  text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5),
-  -1px -1px rgba(0, 255, 255, 0.4);
-}
-
-.cmd_input::placeholder {
-  color: #a5a5a5;
-  text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5),
-  -1px -1px rgba(0, 255, 255, 0.4);
-}
-
-.cmd_input::-ms-input-placeholder {
-  color: #a5a5a5;
-  text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5),
-  -1px -1px rgba(0, 255, 255, 0.4);
-}
-
-input:focus {
-  outline: none !important;
-}
-
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  text-align: justify;
-}
-
-@media all and (orientation:landscape) {
-  pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    text-align: justify;
   }
 }

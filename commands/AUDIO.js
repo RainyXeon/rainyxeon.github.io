@@ -11,7 +11,7 @@ const command = {
     switch (arg) {
       case "ENABLE":
         localStorage.setItem("/settings/audio/beep", "yes")
-        new Audio("beep.mp3").play()
+        new Audio("assets/audio/beep.mp3").play()
         break;
       case "DISABLE":
         localStorage.setItem("/settings/audio/beep", "no")
