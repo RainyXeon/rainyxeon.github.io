@@ -40,12 +40,6 @@ const command = {
             .B^7?7!^..^!7?7^G^             |  - Ame-san
              .~.          .^.              |
 </pre>`
-  },
-
-  template: (data, padding) => {
-    if (!data && data == null)
-      return `<div style="display: block; height: 20px;"></div>`
-    return `<div style="${padding ? `padding-left: ${padding}px` : ""}">${data}</div>`
   }
 }
 
