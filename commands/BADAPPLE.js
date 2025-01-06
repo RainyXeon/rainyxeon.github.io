@@ -11,6 +11,19 @@ const command = {
   hidden: true,
 
   run: async (e, commandList) => {
+    console.log(window.location.href)
+    const isNotLocal = !window.location.href.includes("127.0.0.1") || !window.location.href.includes("127.0.0.1")
+    if (isNotLocal) {
+      document.getElementById('term_screen').innerHTML += `<pre>
+        Woah, you just discovered my secret command! But hear me out,
+        This command cannot run in github.io due to api limitation.
+        Please download the repo, run it on LiveServer and enjoy!
+
+        Peace, 
+        RainyXeon
+      </pre>`
+      return
+    }
     bad_apple.play()
     await sleep(600)
     for (let i = 1; i < 6573; i++) {
