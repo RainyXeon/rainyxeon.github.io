@@ -30,14 +30,14 @@ const command = {
         document.getElementById('term_screen').innerHTML = `<pre>${await data.text()}</pre>`
         await sleep(27.5)
       }
+
+      document.getElementById('term_screen').innerHTML = `<div style="display: flex; align-items: center;">
+        <div style="margin-right: 10px;">C:\\Users\\DeepInRain\\RainyXeon></div>
+        <input dummy="true" type="text" id="input_cmd" class="cmd_input" placeholder="Use 'HELP' to see more command!">
+      </div>`
+
+      document.getElementById("input_cmd").focus()
     })
-
-    document.getElementById('term_screen').innerHTML = `<div style="display: flex; align-items: center;">
-      <div style="margin-right: 10px;">C:\\Users\\DeepInRain\\RainyXeon></div>
-      <input dummy="true" type="text" id="input_cmd" class="cmd_input" placeholder="Use 'HELP' to see more command!">
-    </div>`
-
-    document.getElementById("input_cmd").focus()
   }
 }
 
