@@ -5,6 +5,7 @@ import CLS from "../commands/CLS.js"
 import RAINY from '../commands/RAINY.js'
 import AUDIO from '../commands/AUDIO.js'
 import EFFECTS from '../commands/EFFECTS.js'
+import SYSINFO from '../commands/SYSINFO.js'
 import warni from "./warn.js";
 
 const beep = new Audio("assets/audio/beep.mp3")
@@ -17,7 +18,8 @@ const commandList = {
   CLS, 
   RAINY,
   AUDIO,
-  EFFECTS
+  EFFECTS,
+  SYSINFO
 }
 let empty_counter = 0
 
