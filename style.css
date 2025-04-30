@@ -83,3 +83,9 @@ content-desc {
   }
   
 }
+
+@media (max-width: 590px) {
+  body {
+    margin: 2em;
+  }
+}
