@@ -279,7 +279,7 @@
     document.addEventListener('click', async (event) => {
       const getLink = event.target.getAttribute('credit-link')
       if (!getLink || typeof getLink !== 'string') return;
-      return window.open(getLink, "_blank")
+      return window.open(getLink, '_self')
     }, false)
   </script>
 </html>

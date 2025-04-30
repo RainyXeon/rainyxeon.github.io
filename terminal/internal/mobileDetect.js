@@ -10,7 +10,7 @@ if (isMobile) {
   document.getElementById('term_screen').innerHTML = `<pre style="display: block; width: 100%;">
 If you see this screen, that means, you're viewing this portfolio in the phone
 Currently my portfolio not support phone input!
-Sorry for inconvenient, you can view my profile via <a href="../" target="_blank">main page</a>
+Sorry for inconvenient, you can view my profile via <a href="../" >main page</a>
 
 Catch me on:
   - <a href="https://discord.com/users/898728768791789628" target="_blank">Discord (rainyxeon)</a>

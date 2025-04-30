@@ -6,6 +6,7 @@ import RAINY from '../commands/RAINY.js'
 import AUDIO from '../commands/AUDIO.js'
 import SYSINFO from '../commands/SYSINFO.js'
 import BASE64 from '../commands/BASE64.js'
+import BACK from '../commands/BACK.js'
 import warni from "./warn.js";
 
 const beep = new Audio("../assets/audio/beep.mp3")
@@ -20,6 +21,7 @@ const commandList = {
   AUDIO,
   SYSINFO,
   BASE64,
+  BACK
 }
 let empty_counter = 0
 
