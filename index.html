@@ -28,9 +28,11 @@
         <br><br>
         <content-desc>
           A self-learing full stack developer from Vietnam, a small country with technological prospects.
-          <br><br>
           I started my software development journey in the mid-2020s with the dream of contributing to the open source community.
         </content-desc>
+        <br><br>
+        <content-desc id="online_data"></content-desc>
+        <br><content-desc id="exp_data"></content-desc>
         <br><br>
         <content-desc>
           You can call me:
@@ -269,11 +271,23 @@
     </space>
   </body>
 
-  <script>
+  <script type="module">
+    import prettyMilliseconds from "./terminal/libs/pretty_ms/index.js"
+    // online/exp data
+    const online_data = document.getElementById('online_data')
+    const exp_data = document.getElementById('exp_data')
+    // Initial set
+    online_data.innerHTML = `Online: ${prettyMilliseconds(Date.now() - 1210872600000)}`
+    exp_data.innerHTML = `Years of Experience: ${prettyMilliseconds(Date.now() - 1588294800000)}`
+    // Updater
+    setInterval(() => {
+      online_data.innerHTML = `Online: ${prettyMilliseconds(Date.now() - 1210872600000)}`
+      exp_data.innerHTML = `Years of Experience: ${prettyMilliseconds(Date.now() - 1588294800000)}`
+    }, 1000)
+
     // Insert current year
     const year = new Date().getFullYear()
-    document.getElementById('copy-right').innerHTML 
-      = `© ${year} RainyXeon. All rights reserved.`
+    document.getElementById('copy-right').innerHTML = `© ${year} RainyXeon. All rights reserved.`
 
     // Credit link event
     document.addEventListener('click', async (event) => {

@@ -31,7 +31,7 @@ const command = {
     .B.Y7^B 5Y.           BJYB #!JP^B      | Framework: ExpressJS, ReactJS, NestJS
      :B.P~!5.G.            GBY&J#PP#.      | Projects: ${projects.join(', ')}
      .#PP#J&YBG            .G.5!~P.B:      | Best at: Backend, Frontend, DevOps and A bit of Mobile App
-     B^PJ!# BYJB           .Y5 B^7Y.B.     | Years Experience: ${prettyMilliseconds(Date.now() - 1588294800000)}
+     B^PJ!# BYJB           .Y5 B^7Y.B.     | Years of Experience: ${prettyMilliseconds(Date.now() - 1588294800000)}
     P~:B.~J??&PY5     .^7GJ77!7J!.B^:B     | Contacts: ${social_media.join(', ')}
    .P!!7?J5G&~G:?Y^!75#Y5BPB77777?7775.    | You can call me:
       :^!J&?!5.B:!7775#Y!:BJ#G?J7!^.       |  - rainy

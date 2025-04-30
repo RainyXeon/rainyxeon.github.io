@@ -65,8 +65,7 @@ content-desc {
   border-right: 5px solid #accac8;
 }
 
-/* Should style this */
-@media (max-width: 1090px) {
+@media (max-width: 1224px) {
   body {
     margin: 4em;
   }
