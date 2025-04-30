@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "3270-Regular";
+  src: url('./assets/font/3270-Regular.ttf');
+}
+
+* {
+  font-family: '3270-Regular';
+  -webkit-font-smoothing: none;     /* For Safari and Chrome */
+  -moz-osx-font-smoothing: auto;    /* For Firefox on macOS */
+  text-rendering: optimizeSpeed;    /* Hint to use faster rendering (less smoothing) */
+}
+
+a:link {
+  color: #64dbd3;
+  background-color: transparent;
+}
+
+a:visited {
+  color: #00605a;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #008f85;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a {
+  word-wrap: break-word;       /* Older syntax, still useful */
+  overflow-wrap: break-word;   /* Modern standard */
+  word-break: break-word;      /* Optional - for aggressive breaking */
+}
+
+body {
+  min-height: 100%;
+  background-color: #000000;
+  color: #accac8;
+  border: 5px solid #accac8;
+  margin: 8em;
+}
+
+space {
+  display: flex;
+  border-bottom: 5px solid #accac8;
+}
+
+contents {
+  margin: 20px;
+  display: block;
+}
+
+content-header {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+content-desc {
+  font-size: 20px;
+}
+
+#themed_logo {
+  width: 20em;
+  height: 20em;
+  border-right: 5px solid #accac8;
+}
+
+/* Should style this */
+@media (max-width: 1090px) {
+  body {
+    margin: 4em;
+  }
+
+  html {
+    background-image: url('./assets/image/themed_logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  #themed_logo {
+    display: none;
+  }
+  
+}

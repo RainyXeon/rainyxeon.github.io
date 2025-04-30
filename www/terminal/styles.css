@@ -1,0 +1,134 @@
+:root {
+  --crt-red: #869e9c;
+  --crt-green: #346a66;
+  --crt-blue: #1c3635;
+  --text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5), -1px -1px rgba(0, 255, 255, 0.4);
+  --terminal-color: #c9c9c9;
+  --terminal-placeholder-color: #8a8a8a;
+}
+
+html {
+  height: calc(100% - 60px);
+}
+
+body {
+  min-height: 100%;
+}
+
+pre {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "3270-Regular";
+  src: url('../assets/font/3270-Regular.ttf');
+}
+
+* {
+  font-family: '3270-Regular';
+  -webkit-font-smoothing: none;     /* For Safari and Chrome */
+  -moz-osx-font-smoothing: auto;    /* For Firefox on macOS */
+  text-rendering: optimizeSpeed;    /* Hint to use faster rendering (less smoothing) */
+  font-size: 23px;
+}
+
+a:link {
+  color: #64dbd3;
+  background-color: transparent;
+}
+
+a:visited {
+  color: #9d00ff;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #00605a;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  color: var(--terminal-color);
+  background-color: rgb(25, 25, 30);
+  position: relative;
+}
+
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.cmd_input {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  color: var(--terminal-color);
+  background-color: rgb(25, 25, 30);
+  width: 100%;
+  height: 100%;
+  text-shadow: var(--text-shadow);
+}
+
+.cmd_input::placeholder {
+  color: var(--terminal-placeholder-color);
+  text-shadow: var(--text-shadow);
+}
+
+.cmd_input::-ms-input-placeholder {
+  color: var(--terminal-placeholder-color);
+  text-shadow: var(--text-shadow);
+}
+
+input:focus {
+  outline: none !important;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+@media all and (orientation:landscape) {
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+}
+
+body[effect="true"] {
+  text-shadow: var(--text-shadow);
+  &:before,
+  &:after {
+    content: "";
+    transform: translateZ(0);
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  &:before {
+    background: repeating-linear-gradient(
+      var(--crt-red) 0px,
+      var(--crt-green) 2px,
+      var(--crt-blue) 4px
+    );
+  }
+  &:after {
+    background: repeating-linear-gradient(
+      90deg,
+      var(--crt-red) 1px,
+      var(--crt-green) 2px,
+      var(--crt-blue) 3px
+    );
+  }
+}
