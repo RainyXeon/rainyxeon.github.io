@@ -3,6 +3,13 @@
   src: url('./assets/font/3270-Regular.ttf');
 }
 
+html {
+  background-image: url('./assets/image/themed_logo.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 * {
   font-family: '3270-Regular';
   -webkit-font-smoothing: none;     /* For Safari and Chrome */
@@ -68,13 +75,6 @@ content-desc {
 @media (max-width: 1224px) {
   body {
     margin: 4em;
-  }
-
-  html {
-    background-image: url('./assets/image/themed_logo.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
   }
 
   #themed_logo {
